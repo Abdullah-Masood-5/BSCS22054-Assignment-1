@@ -101,3 +101,164 @@ nav {
     border-radius: 10px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(2, 2, 44);
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+
+header {
+    background-color: rgb(0, 51, 102);
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgb(128, 128, 255);
+}
+
+/* Mian Section Styling*/
+.intro-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-text {
+    flex-basis: 50%;
+    padding-right: 30px;
+}
+
+.intro-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(64, 224, 208);
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 15px;
+    background-color: rgb(128, 128, 255);
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(187, 134, 252);
+}
+
+.intro-image {
+    flex-basis: 40%;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text,
+    .intro-image {
+        flex-basis: 100%;
+        padding: 0;
+    }
+
+    .intro-text h2 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+
+    .intro-image {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand h1 {
+        font-size: 1.4rem;
+    }
+
+    .intro-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
