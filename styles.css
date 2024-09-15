@@ -8,16 +8,16 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #f4f4f4;
-    /* Light color for better contrast */
-    background-color: rgb(2, 2, 44);
-    /* Dark blue background for the whole page */
+    color: #333;
+    background: linear-gradient(135deg, #f9e2c3, #e5a88b);
+    /* Muted warm gradient background */
     padding: 20px;
 }
 
 /* Navigation Styles */
 header {
-    background-color: #1e90ff;
+    background-color: #b35900;
+    /* Deep burnt orange */
     padding: 20px;
     color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -32,13 +32,14 @@ nav {
 }
 
 .brand h3 {
-    font-size: 1.8em;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 .nav-links li {
@@ -53,16 +54,19 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #f4f4f4;
+    color: #ffcc80;
+    /* Light orange hover effect */
 }
 
 /* Social Icon */
 .social-icon {
     font-size: 1.5em;
+    color: #fff;
 }
 
 .social-icon:hover {
-    color: #ff6347;
+    color: #ff9966;
+    /* Lighter orange */
 }
 
 /* Menu Toggle for Mobile */
@@ -76,12 +80,13 @@ nav {
 .section {
     padding: 60px 20px;
     margin: 20px 0;
-    background-color: transparent;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Transparent white section background */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    /* Soft shadow */
     max-width: 1100px;
     margin: 40px auto;
-    color: #f4f4f4;
 }
 
 /* Intro Section */
@@ -94,46 +99,57 @@ nav {
 
 .intro-text {
     max-width: 600px;
+    text-align: left;
 }
 
 .intro-text h2 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 20px;
-    color: #f4f4f4;
-
+    font-weight: bold;
+    color: #b35900;
+    /* Burnt orange */
 }
 
 .intro-text p {
     font-size: 1.2em;
     margin-bottom: 20px;
-    color: #ddd;
+    color: #555;
 }
 
 .intro-text .btn {
-    background-color: #1e90ff;
+    background-color: #ff704d;
+    /* Vibrant coral */
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 25px;
     text-decoration: none;
     margin-right: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transitions */
+    box-shadow: 0 4px 10px rgba(255, 112, 77, 0.3);
+    /* Button shadow */
 }
 
 .intro-text .btn:hover {
-    background-color: #00aced;
+    background-color: #ffcc80;
+    /* Lighter coral hover */
+    transform: translateY(-5px);
+    /* Lift effect on hover */
 }
 
 .intro-image img {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* About Section */
 #about h2 {
     text-align: center;
-    font-size: 2.2em;
+    font-size: 2.5em;
     margin-bottom: 30px;
-    color: #f4f4f4;
+    font-weight: bold;
+    color: #b35900;
 }
 
 .skills-section {
@@ -142,14 +158,15 @@ nav {
 
 .skills-section h3 {
     font-size: 1.8em;
-    color: #1e90ff;
+    color: #ff704d;
+    /* Vibrant coral */
     margin-bottom: 15px;
 }
 
 .skills-section ul {
     list-style-type: disc;
     padding-left: 40px;
-    color: #ddd;
+    color: #555;
 }
 
 .skills-section ul li {
@@ -160,33 +177,35 @@ nav {
 #services h2,
 #projects h2,
 #contact h2 {
-    font-size: 2.2em;
+    font-size: 2.5em;
     text-align: center;
     margin-bottom: 30px;
-    color: #f4f4f4;
+    font-weight: bold;
+    color: #b35900;
+    /* Deep burnt orange */
 }
 
 .service-box,
 .project-box {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Slightly transparent */
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    color: #f4f4f4;
 }
 
 .service-box h3,
 .project-box h3 {
-    font-size: 1.5em;
-    color: #1e90ff;
+    font-size: 1.8em;
+    color: #ff704d;
     margin-bottom: 15px;
 }
 
 .service-box p,
 .project-box p {
-    color: #ddd;
+    color: #777;
 }
 
 /* Projects Section */
@@ -199,12 +218,34 @@ nav {
 /* Contact Section */
 .contact-details p {
     font-size: 1.2em;
-    color: #f4f4f4;
+    color: #333;
     text-align: center;
 }
 
 .contact-details strong {
-    color: #1e90ff;
+    color: #ff704d;
+    /* Coral for contrast */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #b35900;
+    /* Deep burnt orange */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffcc80;
+    /* Lighter orange */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff704d;
+    /* Coral hover */
 }
 
 /* Responsive Design */
@@ -236,7 +277,7 @@ nav {
         left: 0;
         width: 100%;
         flex-direction: column;
-        background-color: #1e90ff;
+        background-color: #b35900;
         text-align: center;
         padding: 20px 0;
         z-index: 1000;
