@@ -244,6 +244,21 @@ footer a {
 footer a:hover {
     color: #ff704d;
 }
+/* Video Section */
+#video h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #b35900;
+}
+
+#video video {
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
