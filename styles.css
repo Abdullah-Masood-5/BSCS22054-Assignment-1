@@ -10,14 +10,12 @@ body {
     line-height: 1.6;
     color: #333;
     background: linear-gradient(135deg, #f9e2c3, #e5a88b);
-    /* Muted warm gradient background */
     padding: 20px;
 }
 
 /* Navigation Styles */
 header {
     background-color: #b35900;
-    /* Deep burnt orange */
     padding: 20px;
     color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -60,13 +58,25 @@ nav {
 
 /* Social Icon */
 .social-icon {
-    font-size: 1.5em;
-    color: #fff;
+
+    width: 42px;
+    height: 42px;
+    font-size: 1.6rem;
+    color: white;
+    background: #ff704d;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 20px;
+    align-items: center;
+    transition: .3s;
+    border-radius: 50%;
+    z-index: 1;
+    text-decoration: none;
 }
 
 .social-icon:hover {
     color: #ff9966;
-    /* Lighter orange */
 }
 
 /* Menu Toggle for Mobile */
@@ -81,10 +91,8 @@ nav {
     padding: 60px 20px;
     margin: 20px 0;
     background-color: rgba(255, 255, 255, 0.8);
-    /* Transparent white section background */
     border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    /* Soft shadow */
     max-width: 1100px;
     margin: 40px auto;
 }
@@ -125,16 +133,12 @@ nav {
     margin-right: 10px;
     border-radius: 50px;
     transition: background-color 0.3s, transform 0.3s;
-    /* Smooth transitions */
     box-shadow: 0 4px 10px rgba(255, 112, 77, 0.3);
-    /* Button shadow */
 }
 
 .intro-text .btn:hover {
     background-color: #ffcc80;
-    /* Lighter coral hover */
     transform: translateY(-5px);
-    /* Lift effect on hover */
 }
 
 .intro-image img {
@@ -159,7 +163,6 @@ nav {
 .skills-section h3 {
     font-size: 1.8em;
     color: #ff704d;
-    /* Vibrant coral */
     margin-bottom: 15px;
 }
 
@@ -182,13 +185,11 @@ nav {
     margin-bottom: 30px;
     font-weight: bold;
     color: #b35900;
-    /* Deep burnt orange */
 }
 
 .service-box,
 .project-box {
     background-color: rgba(255, 255, 255, 0.9);
-    /* Slightly transparent */
     padding: 20px;
     border-radius: 12px;
     margin-bottom: 30px;
@@ -224,13 +225,11 @@ nav {
 
 .contact-details strong {
     color: #ff704d;
-    /* Coral for contrast */
 }
 
 /* Footer Styles */
 footer {
     background-color: #b35900;
-    /* Deep burnt orange */
     padding: 20px;
     text-align: center;
     color: #fff;
@@ -239,13 +238,11 @@ footer {
 
 footer a {
     color: #ffcc80;
-    /* Lighter orange */
     text-decoration: none;
 }
 
 footer a:hover {
     color: #ff704d;
-    /* Coral hover */
 }
 
 /* Responsive Design */
