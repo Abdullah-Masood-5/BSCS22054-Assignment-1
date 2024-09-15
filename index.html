@@ -8,80 +8,144 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Include Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- boxicon css link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
 </head>
 
 <body>
     <header>
         <nav>
             <div class="brand">
-                <h3>Abdullah Masood's Professional Portfolio</h3>
+                <h3>Abdullah Masood</h3>
+            </div>
+            <!-- Menu Toggle for Mobile -->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-links">
-                <li><a href="#" onclick="showSection('home')">Home</a></li>
-                <li><a href="#" onclick="showSection('about')">About</a></li>
-                <li><a href="#" onclick="showSection('services')">Services</a></li>
-                <li><a href="#" onclick="showSection('projects')">Projects</a></li>
-                <li><a href="#" onclick="showSection('contact')">Contact Me</a></li>
-                <!-- Instagram Icon Button -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
                 <li><a href="https://www.instagram.com/yourusername" class="social-icon" target="_blank"><i
                             class="fab fa-instagram"></i></a></li>
             </ul>
         </nav>
     </header>
+
+
     <main>
         <section id="home" class="section">
             <div class="intro-section">
                 <div class="intro-text">
                     <h2>Hello, I'm Syed Muhammad Abdullah Masood</h2>
-                    <p>I am currently studying at ITU, learning and building awesome web projects.</p>
+                    <p>I am a passionate web developer currently studying at ITU, specializing in building high-quality
+                        web solutions. I’m driven to learn and develop efficient, scalable, and modern digital
+                        experiences.</p>
                     <a href="#" class="btn">Download Resume</a>
-                    <a href="#" class="btn">Visit GitHub</a>
+                    <a href="https://github.com/Abdullah-Masood-5" class="btn">Visit GitHub</a>
                 </div>
                 <div class="intro-image">
-                    <img src="Pic-1.png" alt="My Photo">
+                    <img src="Picture1.png" alt="My Photo">
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="section">
-            <h2>About Me</h2>
-            <div class="skills-section">
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li>Effective Communication (verbal & written)</li>
-                    <li>Critical Thinking</li>
-                    <li>Multitasking</li>
-                    <li>Leadership</li>
-                    <li>Organization</li>
-                </ul>
-            </div>
-            <div class="skills-section">
-                <h3>Hard Skills</h3>
-                <ul>
-                    <li>Programming: C++, Assembly, Python, Data Analysis with Python, Web Scraping with Python</li>
-                    <li>Databases: MySQL, SQL, MongoDB, Firebase</li>
-                    <li>WebDev: HTML, CSS, JavaScript, ReactJS</li>
-                    <li>MS Office: MS Word (Certified), MS Excel & MS PowerPoint (Intermediate)</li>
-                </ul>
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I’m an aspiring developer with a strong foundation in both technical and interpersonal skills, making
+                    me a versatile team member and an efficient problem solver.</p>
+                <div class="skills-section">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Effective Communication (verbal & written)</li>
+                        <li>Critical Thinking</li>
+                        <li>Multitasking</li>
+                        <li>Leadership</li>
+                        <li>Organization</li>
+                    </ul>
+                </div>
+                <div class="skills-section">
+                    <h3>Hard Skills</h3>
+                    <ul>
+                        <li>Programming: C++, Python, Web Scraping with Python, Data Analysis</li>
+                        <li>Databases: MySQL, MongoDB, Firebase</li>
+                        <li>Web Development: HTML, CSS, JavaScript, ReactJS</li>
+                        <li>MS Office Suite: Word (Certified), Excel, PowerPoint (Intermediate)</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <!-- Placeholder sections for Services, Projects, and Contact Me -->
+        <!-- Services Section -->
         <section id="services" class="section">
-            <h2>Services</h2>
-            <p>Details about services will go here.</p>
+            <div class="container">
+                <h2>My Services</h2>
+                <p>I offer comprehensive services that cater to both individuals and businesses, focusing on delivering
+                    top-notch results with a client-centric approach.</p>
+                <div class="service-box">
+                    <h3>Web Development</h3>
+                    <p>Building responsive, scalable, and user-friendly websites and applications tailored to your
+                        business needs.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Consulting</h3>
+                    <p>Providing expert insights and strategies to help you optimize your digital presence and business
+                        processes.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Design & Branding</h3>
+                    <p>Creating innovative, visually appealing designs that ensure your brand stands out and resonates
+                        with your audience.</p>
+                </div>
+            </div>
         </section>
+
+        <!-- Projects Section -->
         <section id="projects" class="section">
-            <h2>Projects</h2>
-            <p>Details about projects will go here.</p>
+            <div class="container">
+                <h2>My Recent Projects</h2>
+                <p>Explore some of the projects I’ve recently worked on, each one representing my dedication to quality,
+                    innovation, and attention to detail.</p>
+                <div class="project-grid">
+                    <div class="project-box">
+                        <h3>Web Portal for Logistics</h3>
+                        <p>Developed an end-to-end web portal that streamlined operations and improved efficiency for a
+                            global logistics company.</p>
+                    </div>
+                    <div class="project-box">
+                        <h3>Design for Multimedia Studio</h3>
+                        <p>Crafted an intuitive and user-friendly UI for a multimedia studio, helping them enhance their
+                            digital presence.</p>
+                    </div>
+                    <div class="project-box">
+                        <h3>Data Analytics Dashboard</h3>
+                        <p>Designed and developed a real-time analytics platform for a financial firm to provide
+                            insightful data visualization and reporting.</p>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- Contact Section -->
         <section id="contact" class="section">
-            <h2>Contact Me</h2>
-            <p>Contact details will go here.</p>
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>If you’re interested in working together or have any inquiries, feel free to reach out via the
+                    details below.</p>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> mabd051104@gmail.com</p>
+                    <p><strong>Phone:</strong> +1 (234) 567-890</p>
+                    <p><strong>Address:</strong> 123 Main Street, ABC City, XYZ Country</p>
+                </div>
+            </div>
         </section>
     </main>
-    <script src="scripts.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
