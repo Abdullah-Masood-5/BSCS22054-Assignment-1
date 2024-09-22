@@ -28,7 +28,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact Me</a></li>
-                
+
             </ul>
 
         </nav>
@@ -36,26 +36,14 @@
 
 
     <main>
+        <!-- Update the introduction section -->
         <section id="home" class="section">
             <div class="intro-section">
-                <div class="intro-text">
-                    <h2>Hello, I'm Syed Muhammad Abdullah Masood</h2>
-                    <p>I am a passionate web developer currently studying at ITU, specializing in building high-quality
-                        web solutions. I’m driven to learn and develop efficient, scalable, and modern digital
-                        experiences.</p>
-                    <a href="https://www.linkedin.com/in/abdullah-masood-921458221/" class="btn">Visit LinkedIn</a>
-                    <a href="https://github.com/Abdullah-Masood-5" class="btn">Visit GitHub</a>
-                    <div>
-                        <a href="https://www.instagram.com/yourusername" class="social-icon" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                                <a href="https://x.com/mabd051104" class="social-icon" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-
-                    </div>
+                <div class="intro-text" id="intro-text">
+                    <!-- This will be populated by JS -->
                 </div>
                 <div class="intro-image">
-                    <img src="Pic-1.png" alt="My Photo">
+                    <img id="intro-image" alt="My Photo">
                 </div>
             </div>
         </section>
@@ -64,26 +52,14 @@
         <section id="about" class="section">
             <div class="container">
                 <h2>About Me</h2>
-                <p>I’m an aspiring developer with a strong foundation in both technical and interpersonal skills, making
-                    me a versatile team member and an efficient problem solver.</p>
+                <p id="about-description"></p>
                 <div class="skills-section">
                     <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Effective Communication (verbal & written)</li>
-                        <li>Critical Thinking</li>
-                        <li>Multitasking</li>
-                        <li>Leadership</li>
-                        <li>Organization</li>
-                    </ul>
+                    <ul id="soft-skills"></ul>
                 </div>
                 <div class="skills-section">
                     <h3>Hard Skills</h3>
-                    <ul>
-                        <li>Programming: C++, Python, Web Scraping with Python, Data Analysis</li>
-                        <li>Databases: MySQL, MongoDB, Firebase</li>
-                        <li>Web Development: HTML, CSS, JavaScript, ReactJS</li>
-                        <li>MS Office Suite: Word (Certified), Excel, PowerPoint (Intermediate)</li>
-                    </ul>
+                    <ul id="hard-skills"></ul>
                 </div>
             </div>
         </section>
@@ -92,23 +68,7 @@
         <section id="services" class="section">
             <div class="container">
                 <h2>My Services</h2>
-                <p>I offer comprehensive services that cater to both individuals and businesses, focusing on delivering
-                    top-notch results with a client-centric approach.</p>
-                <div class="service-box">
-                    <h3>Web Development</h3>
-                    <p>Building responsive, scalable, and user-friendly websites and applications tailored to your
-                        business needs.</p>
-                </div>
-                <div class="service-box">
-                    <h3>Consulting</h3>
-                    <p>Providing expert insights and strategies to help you optimize your digital presence and business
-                        processes.</p>
-                </div>
-                <div class="service-box">
-                    <h3>Design & Branding</h3>
-                    <p>Creating innovative, visually appealing designs that ensure your brand stands out and resonates
-                        with your audience.</p>
-                </div>
+                <div id="services-list"></div>
             </div>
         </section>
 
@@ -116,24 +76,7 @@
         <section id="projects" class="section">
             <div class="container">
                 <h2>My Recent Projects</h2>
-                <p>Explore some of the projects I’ve recently worked on, each one representing my dedication to quality,
-                    innovation, and attention to detail.</p>
-                <div class="project-grid">
-                    <div class="project-box">
-                        <h3>Web Portal for Charity</h3>
-                        <p>Developed an end-to-end web portal that streamlined operations and improved efficiency for a
-                            global Charity company.</p>
-                    </div>
-                    <div class="project-box">
-                        <h3>Snake Game</h3>
-                        <p>Created Snake game in raw C++ without any graphic libraries  </p>
-                    </div>
-                    <div class="project-box">
-                        <h3>Data Analytics Dashboard</h3>
-                        <p>Designed and developed a real-time analytics platform for a financial firm to provide
-                            insightful data visualization and reporting.</p>
-                    </div>
-                </div>
+                <div id="projects-list" class="project-grid"></div>
             </div>
         </section>
 
@@ -141,27 +84,21 @@
         <section id="contact" class="section">
             <div class="container">
                 <h2>Contact Me</h2>
-                <p>If you’re interested in working together or have any inquiries, feel free to reach out via the
-                    details below.</p>
-                <div class="contact-details">
-                    <p><strong>Email:</strong> mabd051104@gmail.com</p>
-                    <p><strong>Phone:</strong> +1 (234) 567-890</p>
-                    <p><strong>Address:</strong> 123 Main Street, ABC City, XYZ Country</p>
-                </div>
+                <div class="contact-details" id="contact-details"></div>
             </div>
         </section>
-    </main>
-<!-- Video Section -->
-    <section id="video" class="section">
-        <div class="container">
-            <h2>Watch My Video Introduction</h2>
-            <video controls width="100%" poster="thumbnail.jpg">
-                <source src="My_Portfolio.mp4" type="video/mp4">
-            </video>
-        </div>
-    </section>
 
-    <script src="script.js"></script>
+        <!-- Video Section -->
+        <section id="video" class="section">
+            <div class="container">
+                <h2>Watch My Video Introduction</h2>
+                <video id="portfolio-video" controls width="100%">
+                    <source id="video-source" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
 </body>
 
 </html>
