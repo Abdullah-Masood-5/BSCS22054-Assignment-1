@@ -153,6 +153,8 @@ const portfolioData = {
     }
 };
 
+let done = false;
+
 // DOM Elements
 const introText = document.getElementById("intro-text");
 const introImage = document.getElementById("intro-image");
@@ -234,8 +236,9 @@ function populateSocialIcons(links) {
     
 // Update the function to switch languages
 // *Populating Social Links in Footer
+
 const footerSocialIcons = document.querySelector('.footer-social-icons');
-portfolioData.en.footer.socialLinks.forEach(social => {
+!done && portfolioData.en.footer.socialLinks.forEach(social => {
     const aTag = document.createElement("a");
     aTag.href = social.url;
     aTag.classList.add("social-icon");
@@ -243,6 +246,7 @@ portfolioData.en.footer.socialLinks.forEach(social => {
     aTag.innerHTML = `<i class="${social.icon}"></i>`;
     footerSocialIcons.appendChild(aTag);
 });
+done = true;
     
 
 // Set default language to English
