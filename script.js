@@ -223,14 +223,6 @@ function switchLanguage(language) {
 
     // Update Footer
     footerCopyright.textContent = data.footer.copyright;
-    // Function to populate social icons
-function populateSocialIcons(links) {
-    socialIconsContainer.innerHTML = links.map(link => `
-        <a href="${link.url}" target="_blank" rel="noopener noreferrer">
-            <i class="${link.icon}" aria-hidden="true"></i>
-        </a>
-    `).join('');
-}
 
     
     
@@ -249,8 +241,7 @@ const footerSocialIcons = document.querySelector('.footer-social-icons');
 done = true;
     
 
-// Set default language to English
-switchLanguage("en");
+// Set default language to 
 
 }
 
