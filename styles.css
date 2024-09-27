@@ -486,7 +486,7 @@ footer p {
     }
 
     .language-toggle button {
-        width: 100%;
+        width: 50%;
         /* Full width for better accessibility */
         margin: 5px 0;
         /* Space between buttons */
