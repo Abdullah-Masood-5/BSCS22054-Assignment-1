@@ -26,7 +26,7 @@ html[lang="ur"] {
     padding: 10px;
     margin: 0 5px;
     cursor: pointer;
-    background-color: #007BFF;
+    background-color: #ff704d;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -466,5 +466,26 @@ footer p {
     .skills-box {
         flex-basis: 100%;
         margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .language-toggle {
+        display: flex;
+        /* Show language buttons in mobile view */
+        flex-direction: column;
+        /* Stack vertically */
+        position: relative;
+        /* Allow positioning relative to menu */
+        align-items: center;
+        /* Center align buttons */
+        margin-top: 10px;
+        /* Space above buttons */
+    }
+
+    .language-toggle button {
+        width: 100%;
+        /* Full width for better accessibility */
+        margin: 5px 0;
+        /* Space between buttons */
     }
 }
